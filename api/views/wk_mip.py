@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 
 # Create your views here.
 class Receive(APIView):
-    def get(self, request):
+    def post(self, request):
         msgid = request.data.get("msgid")
         devid = request.data.get("devid")
         cmd = request.data.get("cmd")
